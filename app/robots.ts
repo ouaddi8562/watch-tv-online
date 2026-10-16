@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://watch-tv.online/sitemap.xml',
+    sitemap: 'https://www.watch-tv.online/sitemap.xml',
   }
 }
