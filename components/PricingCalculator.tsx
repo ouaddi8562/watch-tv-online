@@ -1,7 +1,7 @@
-﻿
 "use client";
 
 import { useState } from "react";
+import { whatsappLink } from "../lib/site";
 
 export default function PricingCalculator() {
     const [devices, setDevices] = useState<number>(1);
@@ -18,7 +18,7 @@ export default function PricingCalculator() {
     const getWhatsAppLink = (planName: string, basePrice: number) => {
         const finalPrice = getPrice(basePrice);
         const text = `Hello Watch-TV Online! 👋\nI would like to order the IPTV subscription:\n  Plan: ${planName}\n  Devices: ${devices} screen(s)\n  Price: $${finalPrice}\n\nPlease tell me the payment and activation steps.`;
-        return `https://wa.me/19296072130?text=${encodeURIComponent(text)}`;
+        return whatsappLink(text);
     };
 
     const plans = [
@@ -69,7 +69,7 @@ export default function PricingCalculator() {
                     </div>
                 ))}
             </div>
-            <p style={{ textAlign: "center", marginTop: 32, fontSize: 14, color: "var(--text-light)" }}>Payment finalized on WhatsApp • 7-day money-back guarantee • No commitment</p>
+            <p className="pricing-note">Payment finalized on WhatsApp • 7-day money-back guarantee • No commitment</p>
         </>
     );
 }

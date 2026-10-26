@@ -1,32 +1,21 @@
 import Link from "next/link";
+import { WHATSAPP_DISPLAY, whatsappLink } from "../lib/site";
 
 export default function Footer() {
     return (
         <footer>
             <div className="container">
                 <div className="footer-grid">
-                    <div className="footer-col" style={{ gridColumn: "span 2" }}>
-                        <Link href="/" className="logo" style={{ marginBottom: 16, display: "block" }}>
+                    <div className="footer-col">
+                        <Link href="/" className="logo footer-logo">
                             <span>Watch-TV<span>.online</span></span>
                         </Link>
-                        <p style={{ color: "var(--text-light)", fontSize: 14, maxWidth: 300, marginBottom: 24, lineHeight: 1.6 }}>
+                        <p className="footer-about">
                             Watch-TV Online — Premium IPTV subscription: live channels, movies & series on demand, 5 min activation, 24/7 support.
                         </p>
-                        <a href="https://wa.me/19296072130" target="_blank" rel="noopener noreferrer" style={{
-                            display: "inline-flex",
-                            alignItems: "center",
-                            gap: 8,
-                            background: "#25D366",
-                            color: "white",
-                            padding: "10px 20px",
-                            borderRadius: 24,
-                            fontWeight: 600,
-                            fontSize: 15,
-                            textDecoration: "none",
-                            transition: "background 0.2s"
-                        }}>
+                        <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="wa-pill">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                            +1 929-607-2130
+                            {WHATSAPP_DISPLAY}
                         </a>
                     </div>
                     <div className="footer-col">
@@ -59,61 +48,27 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
-                
-                <div style={{
-                    marginTop: 60,
-                    paddingTop: 24,
-                    borderTop: "1px solid var(--border)",
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 16
-                }}>
-                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-                        <p style={{ color: "var(--text-light)", fontSize: 13, margin: 0 }}>
-                            &copy; 2026 Watch-TV Online. Entertainment subscription service. All rights reserved.
-                        </p>
-                        <a href="https://wa.me/19296072130" target="_blank" rel="noopener noreferrer" style={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 8,
-                            color: "var(--primary)",
-                            fontWeight: 600,
-                            fontSize: 14,
-                            textDecoration: "none"
-                        }}>
+
+                <div className="footer-legal">
+                    <div className="footer-legal-row">
+                        <p>&copy; 2026 Watch-TV Online. Entertainment subscription service. All rights reserved.</p>
+                        <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="footer-wa-link">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-                            +1 929-607-2130
+                            {WHATSAPP_DISPLAY}
                         </a>
                     </div>
-                    <p style={{ color: "var(--text-light)", fontSize: 12, margin: 0 }}>
+                    <p className="footer-disclaimer">
                         Watch-TV Online is an independent service and is not affiliated with any channel, broadcaster or audiovisual group. Trademarks belong to their respective owners.
                     </p>
                 </div>
             </div>
             {/* Sticky Mobile CTA */}
             <div className="mobile-sticky-cta">
-                <div style={{display: "flex", alignItems: "center", justifyContent: "space-between", maxWidth: 600, margin: "0 auto", padding: "12px 20px"}}>
-                    <div style={{fontWeight: 700}}>Subscriptions from $19.99</div>
+                <div className="mobile-sticky-cta-inner">
+                    <div>Subscriptions from $19.99</div>
                     <Link href="/pricing" className="btn btn-primary btn-sm">Choose Plan</Link>
                 </div>
             </div>
-            <style>{`
-                .mobile-sticky-cta {
-                    display: none;
-                    position: fixed;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background: var(--bg-color);
-                    border-top: 1px solid var(--border);
-                    z-index: 50;
-                    box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
-                }
-                @media (max-width: 768px) {
-                    .mobile-sticky-cta { display: block; }
-                    body { padding-bottom: 60px; }
-                }
-            `}</style>
         </footer>
     );
 }

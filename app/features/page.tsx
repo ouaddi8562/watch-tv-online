@@ -1,4 +1,3 @@
-﻿
 import Image from "next/image";
 import { Metadata } from "next";
 
@@ -10,17 +9,17 @@ export const metadata: Metadata = {
 export default function Features() {
     return (
         <main>
-            <section className="hero" style={{ paddingBottom: 20 }}>
-                <div className="container text-center" style={{ textAlign: "center", maxWidth: 800, margin: "0 auto" }}>
+            <section className="hero page-hero pb-20">
+                <div className="container">
                     <h1>Premium <span>Features</span>.</h1>
-                    <p style={{ margin: "0 auto 40px" }}>Discover why Watch-TV Online is the leader in premium IPTV streaming.</p>
+                    <p>Discover why Watch-TV Online is the leader in premium IPTV streaming.</p>
                 </div>
             </section>
 
-            <section className="section" style={{ paddingTop: 0 }}>
+            <section className="section pt-0">
                 <div className="container">
-                    <div style={{ borderRadius: 20, overflow: "hidden", marginBottom: 60, border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <Image src="/images/servers.jpg" alt="Our high speed servers" style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
+                    <div className="media-frame banner mb-60">
+                        <Image src="/images/servers.jpg" alt="Our high speed servers" width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
 
                     <div className="grid-3">
@@ -58,25 +57,25 @@ export default function Features() {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: "var(--card-bg)", borderTop: "1px solid var(--border)" }}>
+            <section className="section section-alt">
                 <div className="container grid-2">
                     <div>
-                        <p style={{ textTransform: "uppercase", fontSize: 12, fontWeight: 700, color: "var(--text-light)", marginBottom: 8 }}>Deep Dive Q&A</p>
-                        <h2 style={{ fontSize: "2.25rem", color: "var(--primary)", lineHeight: 1.2, marginBottom: 24 }}>Everything you need<br/>to know.</h2>
-                        <p style={{ color: "var(--text-light)", marginBottom: 24 }}>We want you to be 100% confident in your choice. Here are the answers to the most technical questions our clients ask.</p>
+                        <p className="eyebrow">Deep Dive Q&A</p>
+                        <h2 className="split-title tight">Everything you need<br/>to know.</h2>
+                        <p className="muted mb-24">We want you to be 100% confident in your choice. Here are the answers to the most technical questions our clients ask.</p>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                    <div className="qa-list stack">
                         <div className="card">
-                            <h4 style={{ marginBottom: 8 }}>What exactly does “Anti-Freeze” mean?</h4>
-                            <p style={{ fontSize: 14, color: "var(--text-light)" }}>During major sports events, standard IPTV servers get overloaded and freeze. Our load-balancers automatically switch you to an empty backup server seamlessly, so you never miss a goal.</p>
+                            <h4>What exactly does “Anti-Freeze” mean?</h4>
+                            <p>During major sports events, standard IPTV servers get overloaded and freeze. Our load-balancers automatically switch you to an empty backup server seamlessly, so you never miss a goal.</p>
                         </div>
                         <div className="card">
-                            <h4 style={{ marginBottom: 8 }}>Can I use a VPN with this service?</h4>
-                            <p style={{ fontSize: 14, color: "var(--text-light)" }}>Yes! In fact, we encourage it if your ISP throttles streaming traffic. Our servers do not block VPNs.</p>
+                            <h4>Can I use a VPN with this service?</h4>
+                            <p>Yes! In fact, we encourage it if your ISP throttles streaming traffic. Our servers do not block VPNs.</p>
                         </div>
                         <div className="card">
-                            <h4 style={{ marginBottom: 8 }}>How fast does my internet need to be?</h4>
-                            <p style={{ fontSize: 14, color: "var(--text-light)" }}>15 Mbps is enough for standard HD. If you plan to stream our 4K channels, we strongly recommend 30 Mbps or higher for a completely flawless experience.</p>
+                            <h4>How fast does my internet need to be?</h4>
+                            <p>15 Mbps is enough for standard HD. If you plan to stream our 4K channels, we strongly recommend 30 Mbps or higher for a completely flawless experience.</p>
                         </div>
                     </div>
                 </div>

@@ -6,9 +6,9 @@ export const metadata: Metadata = {
 
 export default function Page() {
     return (
-        <main style={{ padding: "80px 20px", maxWidth: 800, margin: "0 auto" }}>
-            <h1 style={{ marginBottom: 32, fontSize: "2.5rem", color: "var(--primary)", fontWeight: 800 }}>Refund Policy</h1>
-            <div className="legal-content" style={{ color: "var(--text-main)", lineHeight: 1.8, fontSize: 16 }}>
+        <main className="legal-page">
+            <h1>Refund Policy</h1>
+            <div className="legal-content">
                 
 <h2>1. 7-Day Money-Back Guarantee</h2>
 <p>At Watch-TV Online, we want you to be completely satisfied with your purchase. We offer a strict, no-questions-asked 7-Day Money-Back Guarantee for all new subscriptions.</p>
@@ -32,12 +32,6 @@ export default function Page() {
 </ul>
 
             </div>
-            <style>{`
-                .legal-content h2 { color: var(--primary); margin: 32px 0 16px; font-size: 1.5rem; }
-                .legal-content p { margin-bottom: 16px; color: var(--text-light); }
-                .legal-content ul { margin-bottom: 24px; padding-left: 20px; color: var(--text-light); }
-                .legal-content li { margin-bottom: 8px; }
-            `}</style>
         </main>
     );
 }

@@ -39,7 +39,7 @@ export default function NavMenu() {
                         </li>
                     ))}
                     <li className="nav-support">
-                        <Link href="/contact" className="btn btn-primary btn-sm" style={{ color: "white" }} onClick={close}>
+                        <Link href="/contact" className="btn btn-primary btn-sm" onClick={close}>
                             Support
                         </Link>
                     </li>

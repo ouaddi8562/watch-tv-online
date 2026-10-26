@@ -1,4 +1,3 @@
-﻿
 import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -11,40 +10,40 @@ export const metadata: Metadata = {
 export default function Devices() {
     return (
         <main>
-            <section className="hero" style={{ paddingBottom: 0 }}>
-                <div className="container text-center" style={{ textAlign: "center", maxWidth: 800, margin: "0 auto" }}>
+            <section className="hero page-hero">
+                <div className="container">
                     <h1>Compatible with <span>all your screens</span>.</h1>
-                    <p style={{ margin: "0 auto 40px" }}>Watch Watch-TV Online on your television, computer, tablet or smartphone. One subscription is all you need.</p>
+                    <p>Watch Watch-TV Online on your television, computer, tablet or smartphone. One subscription is all you need.</p>
                 </div>
             </section>
 
             <section className="section">
                 <div className="container">
-                    <div style={{ borderRadius: 20, overflow: "hidden", marginBottom: 40, border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <Image src="/images/devices-mockup.jpg" alt="Compatible Devices" style={{ height: "auto", width: "100%", display: "block" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
+                    <div className="media-frame mb-40">
+                        <Image src="/images/devices-mockup.jpg" alt="Compatible Devices" width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
                     
                     <div className="grid-4">
-                        <div className="card" style={{ textAlign: "center" }}>
-                            <h3 style={{ marginTop: 12 }}>📺 Smart TV</h3>
+                        <div className="card device-card">
+                            <h3>📺 Smart TV</h3>
                             <p>Samsung Tizen, LG WebOS, Android TV, Sony, Philips, TCL, Hisense...</p>
                         </div>
-                        <div className="card" style={{ textAlign: "center" }}>
-                            <h3 style={{ marginTop: 12 }}>🔥 Box & Sticks</h3>
+                        <div className="card device-card">
+                            <h3>🔥 Box & Sticks</h3>
                             <p>Amazon Firestick, Apple TV, Xiaomi Mi Box, Nvidia Shield, Formuler, MAG...</p>
                         </div>
-                        <div className="card" style={{ textAlign: "center" }}>
-                            <h3 style={{ marginTop: 12 }}>📱 Mobiles & Tablets</h3>
+                        <div className="card device-card">
+                            <h3>📱 Mobiles & Tablets</h3>
                             <p>iPhone, iPad, Android Smartphones and Tablets.</p>
                         </div>
-                        <div className="card" style={{ textAlign: "center" }}>
-                            <h3 style={{ marginTop: 12 }}>💻 Computers</h3>
+                        <div className="card device-card">
+                            <h3>💻 Computers</h3>
                             <p>Windows, Mac OS, Linux via VLC, Ibo Player, Smarters Pro, etc.</p>
                         </div>
                     </div>
                     
-                    <div style={{ textAlign: "center", marginTop: 48 }}>
-                        <p style={{ marginBottom: 24, color: "var(--text-light)" }}>You will receive a detailed installation guide per device after your order.</p>
+                    <div className="center mt-48">
+                        <p className="muted mb-24">You will receive a detailed installation guide per device after your order.</p>
                         <Link href="/pricing" className="btn btn-primary">Order Now</Link>
                     </div>
                 </div>
