@@ -7,7 +7,7 @@ export default function Footer() {
                 <div className="footer-grid">
                     <div className="footer-col" style={{ gridColumn: "span 2" }}>
                         <Link href="/" className="logo" style={{ marginBottom: 16, display: "block" }}>
-                            Watch-TV<span>.online</span>
+                            <span>Watch-TV<span>.online</span></span>
                         </Link>
                         <p style={{ color: "var(--text-light)", fontSize: 14, maxWidth: 300, marginBottom: 24, lineHeight: 1.6 }}>
                             Watch-TV Online — Premium IPTV subscription: live channels, movies & series on demand, 5 min activation, 24/7 support.
@@ -35,7 +35,7 @@ export default function Footer() {
                             <li><Link href="/pricing">Pricing & Subscription</Link></li>
                             <li><Link href="/channels-vod">Channels List</Link></li>
                             <li><Link href="/features">Features</Link></li>
-                            <li><Link href="/pricing">How it works</Link></li>
+                            <li><Link href="/#how-it-works">How it works</Link></li>
                             <li><Link href="/contact">Become a Reseller</Link></li>
                         </ul>
                     </div>

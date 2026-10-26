@@ -1,4 +1,5 @@
 ﻿
+import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function Features() {
             <section className="section" style={{ paddingTop: 0 }}>
                 <div className="container">
                     <div style={{ borderRadius: 20, overflow: "hidden", marginBottom: 60, border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <img src="/images/servers.jpg" alt="Our high speed servers" style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} />
+                        <Image src="/images/servers.jpg" alt="Our high speed servers" style={{ width: "100%", height: 400, objectFit: "cover", display: "block" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
 
                     <div className="grid-3">
@@ -66,7 +67,7 @@ export default function Features() {
                     </div>
                     <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                         <div className="card">
-                            <h4 style={{ marginBottom: 8 }}>What exactly does "Anti-Freeze" mean?</h4>
+                            <h4 style={{ marginBottom: 8 }}>What exactly does “Anti-Freeze” mean?</h4>
                             <p style={{ fontSize: 14, color: "var(--text-light)" }}>During major sports events, standard IPTV servers get overloaded and freeze. Our load-balancers automatically switch you to an empty backup server seamlessly, so you never miss a goal.</p>
                         </div>
                         <div className="card">

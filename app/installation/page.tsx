@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -29,11 +30,11 @@ export default function Installation() {
                                 <li>From your home screen, go to <strong>Settings</strong> (the gear icon).</li>
                                 <li>Select <strong>My Fire TV</strong> (or Device Preferences on Android TV).</li>
                             </ul>
-                            <img src="/images/installation/My-Fire-TV.webp" alt="My Fire TV Settings" className="step-image" />
+                            <Image src="/images/installation/My-Fire-TV.webp" alt="My Fire TV Settings" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                             <ul>
-                                <li>Select <strong>Developer Options</strong>. <em>(Note: If you don&apos;t see Developer Options, click on "About", highlight your device name, and press the OK button 7 times to reveal it).</em></li>
+                                <li>Select <strong>Developer Options</strong>. <em>(Note: If you don&apos;t see Developer Options, click on “About”, highlight your device name, and press the OK button 7 times to reveal it).</em></li>
                             </ul>
-                            <img src="/images/installation/Developer-Options-Xtreme-HD.webp" alt="Developer Options" className="step-image" />
+                            <Image src="/images/installation/Developer-Options-Xtreme-HD.webp" alt="Developer Options" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                         </div>
                     </div>
 
@@ -41,19 +42,19 @@ export default function Installation() {
                         <div className="step-number">2</div>
                         <div className="step-content">
                             <h2>Get the Downloader App</h2>
-                            <p>The "Downloader" app is a vital tool that lets you easily download IPTV apps onto your TV.</p>
+                            <p>The “Downloader” app is a vital tool that lets you easily download IPTV apps onto your TV.</p>
                             <ul>
                                 <li>Go back to your Home Screen and click on the <strong>Find / Search</strong> magnifying glass icon.</li>
                             </ul>
-                            <img src="/images/installation/XtremeHD-Search-Box.webp" alt="Search Icon" className="step-image" />
+                            <Image src="/images/installation/XtremeHD-Search-Box.webp" alt="Search Icon" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                             <ul>
                                 <li>Type in <strong>Downloader</strong>.</li>
                             </ul>
-                            <img src="/images/installation/Type-Downloader-Setup-Xtreme.webp" alt="Type Downloader" className="step-image" />
+                            <Image src="/images/installation/Type-Downloader-Setup-Xtreme.webp" alt="Type Downloader" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                             <ul>
                                 <li>Select the orange Downloader app from the search results and click <strong>Download / Install</strong>.</li>
                             </ul>
-                            <img src="/images/installation/Download-Orange-Icon-Xtreme.webp" alt="Downloader App" className="step-image" />
+                            <Image src="/images/installation/Download-Orange-Icon-Xtreme.webp" alt="Downloader App" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                         </div>
                     </div>
 
@@ -65,7 +66,7 @@ export default function Installation() {
                             <ul>
                                 <li>First, go back to Settings &gt; My Fire TV &gt; Developer Options &gt; Install Unknown Apps, and turn ON <strong>Downloader</strong>.</li>
                             </ul>
-                            <img src="/images/installation/Install-Unknown-Sources-Xtreme-Setup.webp" alt="Enable Downloader Unknown Sources" className="step-image" />
+                            <Image src="/images/installation/Install-Unknown-Sources-Xtreme-Setup.webp" alt="Enable Downloader Unknown Sources" className="step-image" style={{ height: "auto" }} width={1920} height={1080} sizes="(max-width: 600px) 100vw, 500px" />
                             <ul>
                                 <li>Open the <strong>Downloader</strong> app.</li>
                                 <li>Click on the URL text box and type in the following URL exactly:</li>

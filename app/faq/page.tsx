@@ -40,7 +40,7 @@ export default function FAQ() {
 
                         <div className="card">
                             <h3 style={{ marginBottom: 8, fontSize: 18 }}>Do you offer a free trial before I buy?</h3>
-                            <p style={{ color: "var(--text-light)", fontSize: 15 }}>Instead of a limited free trial, we offer a rock-solid 7-Day Money-Back Guarantee. You can purchase a plan, try out all the premium features, and if you aren't satisfied within the first 7 days, we will refund you entirely.</p>
+                            <p style={{ color: "var(--text-light)", fontSize: 15 }}>Instead of a limited free trial, we offer a rock-solid 7-Day Money-Back Guarantee. You can purchase a plan, try out all the premium features, and if you aren’t satisfied within the first 7 days, we will refund you entirely.</p>
                         </div>
 
                         <div className="card">

@@ -3,18 +3,23 @@
 
 import { useEffect } from "react";
 
+declare global {
+    interface Window {
+        $crisp?: unknown[];
+        CRISP_WEBSITE_ID?: string;
+    }
+}
+
 export default function ChatWidgets() {
     useEffect(() => {
-        // Initialize Crisp Chat
-        (window as any).$crisp = [];
-        (window as any).CRISP_WEBSITE_ID = "b5dfb1b1-ec10-4f34-93fb-cbd44d933df0";
-        (function() {
-            var d = document;
-            var s = d.createElement("script");
-            s.src = "https://client.crisp.chat/l.js";
-            s.async = true;
-            d.getElementsByTagName("head")[0].appendChild(s);
-        })();
+        // Initialize Crisp Chat (once)
+        if (window.$crisp) return;
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "b5dfb1b1-ec10-4f34-93fb-cbd44d933df0";
+        const s = document.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = true;
+        document.head.appendChild(s);
     }, []);
 
     return (
@@ -72,7 +77,7 @@ export default function ChatWidgets() {
                     border: 2px solid var(--bg-color);
                 }
                 @media (max-width: 768px) {
-                    .floating-widgets { bottom: 16px; left: 16px; }
+                    .floating-widgets { bottom: 84px; left: 16px; }
                     .widget-btn { width: 50px; height: 50px; }
                 }
             `}</style>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import PricingCalculator from "../components/PricingCalculator";
 
@@ -18,14 +19,11 @@ export default function Home() {
                                 Explore Offers
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </Link>
-                            <Link href="/contact" className="btn btn-outline">
-                                Free Trial
-                            </Link>
                         </div>
                     </div>
                     
                     <div className="hero-image-container">
-                        <img src="/images/hero-banner.jpg" alt="IPTV Cinematic Display" className="hero-image" />
+                        <Image src="/images/hero-banner.jpg" alt="IPTV Cinematic Display" className="hero-image" style={{ height: "auto" }} width={1024} height={1024} sizes="(max-width: 1024px) 100vw, 550px" preload />
                         
                         <div className="floating-badge fb-1">
                             <div className="fb-icon blue">
@@ -100,7 +98,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: "var(--card-bg)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
+            <section className="section" id="how-it-works" style={{ backgroundColor: "var(--card-bg)", borderTop: "1px solid var(--border)", borderBottom: "1px solid var(--border)" }}>
                 <div className="container">
                     <div className="section-header">
                         <h2>How to Start in <span>3 Easy Steps</span></h2>
@@ -165,10 +163,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="section" style={{ backgroundColor: "var(--card-bg)", borderTop: "1px solid var(--border)" }}>
+            <section className="section" id="reviews" style={{ backgroundColor: "var(--card-bg)", borderTop: "1px solid var(--border)" }}>
                 <div className="container grid-2">
                     <div style={{ borderRadius: 20, overflow: "hidden", border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <img src="/images/family.jpg" alt="Family watching TV" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                        <Image src="/images/family.jpg" alt="Family watching TV" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
                     <div>
                         <p style={{ textTransform: "uppercase", fontSize: 12, fontWeight: 700, color: "var(--text-light)", marginBottom: 8 }}>Client Success Stories</p>
@@ -177,22 +175,22 @@ export default function Home() {
                         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
                             <div style={{ padding: 24, border: "1px solid var(--border)", borderRadius: 12, background: "var(--bg-color)" }}>
                                 <div style={{ color: "#fbbf24", marginBottom: 8 }}>★★★★★</div>
-                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>"We cut the cord a year ago. Watch-TV Online has every single channel we used to pay $120/month for, without any freezing during big football matches."</p>
+                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>“We cut the cord a year ago. Watch-TV Online has every single channel we used to pay $120/month for, without any freezing during big football matches.”</p>
                                 <p style={{ fontWeight: 600, fontSize: 14, color: "var(--primary)" }}>— David M., Chicago, IL</p>
                             </div>
                             <div style={{ padding: 24, border: "1px solid var(--border)", borderRadius: 12, background: "var(--bg-color)" }}>
                                 <div style={{ color: "#fbbf24", marginBottom: 8 }}>★★★★★</div>
-                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>"The setup took 5 minutes on my LG Smart TV. The WhatsApp support team was incredible and walked me through the whole thing."</p>
+                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>“The setup took 5 minutes on my LG Smart TV. The WhatsApp support team was incredible and walked me through the whole thing.”</p>
                                 <p style={{ fontWeight: 600, fontSize: 14, color: "var(--primary)" }}>— Sarah K., Austin, TX</p>
                             </div>
                             <div style={{ padding: 24, border: "1px solid var(--border)", borderRadius: 12, background: "var(--bg-color)" }}>
                                 <div style={{ color: "#fbbf24", marginBottom: 8 }}>★★★★★</div>
-                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>"I travel a lot for work. Having access to all my local US channels from my iPad in a hotel room overseas has been an absolute lifesaver."</p>
+                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>“I travel a lot for work. Having access to all my local US channels from my iPad in a hotel room overseas has been an absolute lifesaver.”</p>
                                 <p style={{ fontWeight: 600, fontSize: 14, color: "var(--primary)" }}>— Michael T., New York, NY</p>
                             </div>
                             <div style={{ padding: 24, border: "1px solid var(--border)", borderRadius: 12, background: "var(--bg-color)" }}>
                                 <div style={{ color: "#fbbf24", marginBottom: 8 }}>★★★★★</div>
-                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>"Best IPTV provider I've ever used. Zero lag during UFC pay-per-view events, which is exactly what I was looking for. Incredible value."</p>
+                                <p style={{ fontStyle: "italic", marginBottom: 12 }}>“Best IPTV provider I’ve ever used. Zero lag during UFC pay-per-view events, which is exactly what I was looking for. Incredible value.”</p>
                                 <p style={{ fontWeight: 600, fontSize: 14, color: "var(--primary)" }}>— Omar H., Miami, FL</p>
                             </div>
                         </div>

@@ -12,7 +12,7 @@ export default function Page() {
                 
 <h2>1. 7-Day Money-Back Guarantee</h2>
 <p>At Watch-TV Online, we want you to be completely satisfied with your purchase. We offer a strict, no-questions-asked 7-Day Money-Back Guarantee for all new subscriptions.</p>
-<p>Because we do not offer 24-hour free trials (as they do not provide enough time to properly test stability during peak hours), we encourage you to purchase a subscription and test our service thoroughly. If you experience buffering, missing channels, or if the service simply does not meet your expectations, you are fully covered.</p>
+<p>Because we do not offer free trials (as they do not provide enough time to properly test stability during peak hours), we encourage you to purchase a subscription and test our service thoroughly. If you experience buffering, missing channels, or if the service simply does not meet your expectations, you are fully covered.</p>
 
 <h2>2. How to Request a Refund</h2>
 <p>To request a refund within your first 7 days, please follow these simple steps:</p>

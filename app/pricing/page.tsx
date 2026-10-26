@@ -30,14 +30,14 @@ export default function Pricing() {
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                             </div>
                             <h3>Secure WhatsApp Checkout</h3>
-                            <p style={{ color: "var(--text-light)", marginTop: 12, fontSize: 14 }}>You don't need to enter your credit card on a random website. You finalize the payment directly with a human via WhatsApp using secure methods.</p>
+                            <p style={{ color: "var(--text-light)", marginTop: 12, fontSize: 14 }}>You don’t need to enter your credit card on a random website. You finalize the payment directly with a human via WhatsApp using secure methods.</p>
                         </div>
                         <div style={{ padding: "32px 16px" }}>
                             <div style={{ background: "rgba(249, 115, 22, 0.1)", color: "#f97316", width: 64, height: 64, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}>
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 8v8"/></svg>
                             </div>
                             <h3>7-Day Money Back</h3>
-                            <p style={{ color: "var(--text-light)", marginTop: 12, fontSize: 14 }}>We don't offer 2-hour trials because they aren't enough to test stability. Buy a plan, test it for a week, and if you aren't satisfied, we refund you.</p>
+                            <p style={{ color: "var(--text-light)", marginTop: 12, fontSize: 14 }}>We don’t offer free trials because a few hours isn’t enough to test stability. Buy a plan, test it for a week, and if you aren’t satisfied, we refund you.</p>
                         </div>
                         <div style={{ padding: "32px 16px" }}>
                             <div style={{ background: "rgba(14, 165, 233, 0.1)", color: "#0ea5e9", width: 64, height: 64, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 24px" }}>

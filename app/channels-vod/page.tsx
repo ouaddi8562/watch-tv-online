@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ export default function Channels() {
             <section className="section">
                 <div className="container">
                     <div style={{ borderRadius: 20, overflow: "hidden", marginBottom: 60, border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <img src="/images/vod-collage.jpg" alt="VOD Movies and Series" style={{ width: "100%", display: "block" }} />
+                        <Image src="/images/vod-collage.jpg" alt="VOD Movies and Series" style={{ height: "auto", width: "100%", display: "block" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
 
                     <div className="grid-3" style={{ marginBottom: 60 }}>
@@ -39,7 +40,7 @@ export default function Channels() {
                     </div>
 
                     <div style={{ borderRadius: 20, overflow: "hidden", marginBottom: 60, border: "1px solid var(--border)", boxShadow: "var(--shadow-glow)" }}>
-                        <img src="/images/hero-banner.jpg" alt="Live Sports and Entertainment" style={{ width: "100%", display: "block", maxHeight: 400, objectFit: "cover" }} />
+                        <Image src="/images/hero-banner.jpg" alt="Live Sports and Entertainment" style={{ height: "auto", width: "100%", display: "block", maxHeight: 400, objectFit: "cover" }} width={1024} height={1024} sizes="(max-width: 900px) 100vw, 530px" />
                     </div>
                     
                     <div style={{ textAlign: "center", marginTop: 48 }}>

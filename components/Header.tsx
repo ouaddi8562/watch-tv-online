@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import ThemeToggle from "./ThemeToggle";
+import NavMenu from "./NavMenu";
 
 export default function Header() {
     return (
@@ -12,21 +12,9 @@ export default function Header() {
                             <polygon points="5 3 19 12 5 21 5 3"></polygon>
                         </svg>
                     </div>
-                    Watch-TV<span>.online</span>
+                    <span>Watch-TV<span>.online</span></span>
                 </Link>
-                <nav>
-                    <ul>
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/pricing">Pricing</Link></li>
-                        <li><Link href="/devices">Devices</Link></li>
-                        <li><Link href="/installation">Installation</Link></li>
-                        <li><Link href="/features">Features</Link></li>
-                        <li><Link href="/channels-vod">Channels</Link></li>
-                        <li><Link href="/faq">FAQ</Link></li>
-                        <li><ThemeToggle /></li>
-                        <li><Link href="/contact" className="btn btn-primary btn-sm" style={{color: "white"}}>Support</Link></li>
-                    </ul>
-                </nav>
+                <NavMenu />
             </div>
         </header>
     );
