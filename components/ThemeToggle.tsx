@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useSyncExternalStore } from "react";
 
@@ -24,7 +24,7 @@ export default function ThemeToggle() {
         }
     };
 
-    if (theme === null) return <button className="theme-toggle" aria-label="Toggle Theme" style={{ width: 36, height: 36 }}></button>;
+    if (theme === null) return <button className="theme-toggle theme-toggle-placeholder" aria-label="Toggle Theme"></button>;
 
     return (
         <button className="theme-toggle" aria-label="Toggle Theme" onClick={toggleTheme}>
