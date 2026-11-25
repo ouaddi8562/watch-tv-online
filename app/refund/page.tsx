@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { WHATSAPP_DISPLAY } from "../../lib/site";
 
 export const metadata: Metadata = {
     title: "Refund Policy | Watch-TV Online",
@@ -17,7 +18,7 @@ export default function Page() {
 <h2>2. How to Request a Refund</h2>
 <p>To request a refund within your first 7 days, please follow these simple steps:</p>
 <ul>
-    <li>Contact our support team directly via WhatsApp at <strong>+1 929-607-2130</strong>.</li>
+    <li>Contact our support team directly via WhatsApp at <strong>{WHATSAPP_DISPLAY}</strong>.</li>
     <li>Provide your account details (the name or email used during setup).</li>
     <li>State clearly that you would like a refund. You do not need to provide a lengthy explanation, though feedback is always appreciated.</li>
 </ul>
